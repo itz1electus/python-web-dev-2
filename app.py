@@ -3,6 +3,7 @@ from database import load_from_db
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello_jovian():
     global jobs_list
