@@ -1,4 +1,0 @@
-database: careerwebsite
-username: 711raxavmxn8qv7dw46k
-host: ap-south.connect.psdb.cloud
-password: pscale_pw_sKzTmJulgReVqkzXGLWlSoc1y7KtJlQ46FrV1iAfsup
