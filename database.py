@@ -28,3 +28,11 @@ def load_job_info_from_db(id):
             return None
         else:
             return rows[0]._mapping
+
+
+def add_application_to_db(job_id, data):
+    with engine.connect() as conn:
+        conn.execute(
+            text(
+                f"INSERT INTO applications (job_id, full_name, email, linkedin, education, work_exp, resume_url) VALUES ({job_id}, '{data['full_name']}', '{data['email']}', '{data['linkedin']}', '{data['education']}', '{data['work_exp']}', '{data['resume_url']}')"
+            ))
